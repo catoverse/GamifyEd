@@ -1,0 +1,46 @@
+{
+  "info": [
+    {
+      "id": 1,
+      "name": "Narendra Singh",
+      "badge": "🐇 Research Rabbit",
+      "img": "/images/profile/narendra.png",
+      "twitter": {
+        "logo": "Twitter.svg",
+        "link": "https://twitter.com/ashwindevx"
+      },
+      "linkedin": {
+        "logo": "Linkedin.svg",
+        "link": "https://twitter.com/ashwindevx"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Pallavi Bagchi",
+      "badge": "🐧 Product Penguin",
+      "img": "/images/profile/pallavi.png",
+      "twitter": {
+        "logo": "Twitter.svg",
+        "link": "https://twitter.com/ashwindevx"
+      },
+      "linkedin": {
+        "logo": "Linkedin.svg",
+        "link": "https://twitter.com/ashwindevx"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Amol Telang",
+      "badge": "⚔️ Notion Ninja",
+      "img": "/images/profile/amol.png",
+      "twitter": {
+        "logo": "Twitter.svg",
+        "link": "https://twitter.com/ashwindevx"
+      },
+      "linkedin": {
+        "logo": "Linkedin.svg",
+        "link": "https://twitter.com/ashwindevx"
+      }
+    }
+  ]
+}
