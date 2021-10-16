@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledLastSection = styled.div`
   text-align: center;
-  margin: 1em 0 3em;
+  margin: 3em 0 6em;
 `;
 
 export const Heading = styled.p`
@@ -13,4 +13,8 @@ export const Heading = styled.p`
 
   padding: 0 0.5em 0.5em 0.5em;
   margin: 0 auto 1em auto;
+
+  @media only screen and (max-width: 486px) {
+    font-size: 1.5rem;
+  }
 `;

@@ -37,6 +37,10 @@ export default function Home() {
     max-width: 1124px;
     padding: 0 2em;
     margin: 0 auto;
+
+    @media only screen and (max-width: 486px) {
+      justify-content: space-between;
+    }
   `;
 
   const StyledHeader = styled.div`
@@ -47,9 +51,13 @@ export default function Home() {
 
     margin: 3em 0;
 
+    @media only screen and (max-width: 486px) {
+      flex-grow: unset;
+    }
+
     p {
       font-family: var(--main-font);
-      font-size: 2.5em;
+      font-size: 2.5rem;
       font-weight: 400;
 
       padding-left: 0.5em;
@@ -57,6 +65,19 @@ export default function Home() {
 
     span {
       color: var(--pink);
+    }
+
+    @media only screen and (max-width: 486px) {
+      p {
+        font-size: 2rem;
+      }
+    }
+  `;
+
+  const Logo = styled.div`
+    @media only screen and (max-width: 486px) {
+      width: 30px;
+      height: 48px;
     }
   `;
 
@@ -74,19 +95,23 @@ export default function Home() {
           <StyledHeader>
             <span>
               {isDarkMode ? (
-                <Image
-                  src="/logo-light.svg"
-                  alt="Vercel Logo"
-                  width={36}
-                  height={57}
-                />
+                <Logo>
+                  <Image
+                    src="/logo-light.svg"
+                    alt="Vercel Logo"
+                    width={36}
+                    height={57}
+                  />
+                </Logo>
               ) : (
-                <Image
-                  src="/logo-dark.svg"
-                  alt="Vercel Logo"
-                  width={36}
-                  height={57}
-                />
+                <Logo>
+                  <Image
+                    src="/logo-dark.svg"
+                    alt="Vercel Logo"
+                    width={36}
+                    height={57}
+                  />
+                </Logo>
               )}
             </span>
             <p>

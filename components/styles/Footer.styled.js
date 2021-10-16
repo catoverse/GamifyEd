@@ -24,7 +24,7 @@ export const Socials = styled.div`
   display: flex;
   flex-direction: row;
 
-  & a {
+  a {
     margin: 0 0.5em;
   }
 `;

@@ -65,9 +65,13 @@ const StyledCarousel = styled.div`
 `;
 
 const Heading = styled.div`
-  font-size: 2em;
+  font-size: 2rem;
   font-family: var(--main-font);
   font-weight: 700;
+
+  @media only screen and (max-width: 486px) {
+    font-size: 1.5rem;
+  }
 `;
 
 const SubHead = styled.p`
@@ -76,6 +80,10 @@ const SubHead = styled.p`
   font-family: var(--main-font);
 
   margin: 0 0 0.5em;
+
+  @media only screen and (max-width: 486px) {
+    font-size: 1rem;
+  }
 `;
 
 const Text = styled.p`
@@ -84,6 +92,10 @@ const Text = styled.p`
   font-size: 1.125rem;
   font-weight: 400;
   font-family: var(--para-font);
+
+  @media only screen and (max-width: 486px) {
+    font-size: 0.875rem;
+  }
 `;
 
 const ImageContainer = styled.div`

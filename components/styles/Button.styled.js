@@ -11,5 +11,13 @@ export const StyledButton = styled.a`
   font-family: var(--para-font);
   text-decoration: none;
 
-  padding: 0.75em 1.5em;
+  padding: 8px 18px;
+  width: fit-content;
+
+  transform: translateY(0);
+  transition: all 0.25s linear;
+
+  &:hover {
+    box-shadow: #ff238b80 0 10px 20px -10px;
+  }
 `;
