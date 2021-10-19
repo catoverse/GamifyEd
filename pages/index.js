@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import Image from "next/image";
+
+// libraries imports
 import { ThemeProvider } from "styled-components";
 import styled from "styled-components";
 import GlobalStyles from "../components/styles/Global";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 
+// components imports
 import { MainSection } from "../components/MainSection";
+import { Video } from "../components/Video.js";
 import { Carousel } from "../components/Carousel";
 import { Profile } from "../components/Profile";
 import { LastSection } from "../components/LastSection";
@@ -51,6 +55,8 @@ export default function Home() {
 
     margin: 3em 0;
 
+    position: relative;
+
     @media only screen and (max-width: 486px) {
       flex-grow: unset;
     }
@@ -81,6 +87,17 @@ export default function Home() {
     }
   `;
 
+  const DarkModeButton = styled.button`
+    position: absolute;
+    top: 3.75em;
+    right: 15%;
+
+    @media only screen and (max-width: 486px) {
+      right: 7%;
+      top: 3.5em;
+    }
+  `;
+
   const [isDarkMode, setDarkMode] = useState(true);
 
   const toggleDarkMode = () => {
@@ -91,6 +108,7 @@ export default function Home() {
     <ThemeProvider theme={isDarkMode ? theme.dark : theme.light}>
       <>
         <GlobalStyles />
+
         <HeaderWrapper>
           <StyledHeader>
             <span>
@@ -118,13 +136,17 @@ export default function Home() {
               Gamify<span>Ed</span>
             </p>
           </StyledHeader>
-          <DarkModeSwitch
-            checked={isDarkMode}
-            onChange={toggleDarkMode}
-            size={30}
-          />
         </HeaderWrapper>
+        <DarkModeButton
+          as={DarkModeSwitch}
+          moonColor={"#ff238b"}
+          sunColor={"#F78812"}
+          checked={isDarkMode}
+          onChange={toggleDarkMode}
+          size={30}
+        />
         <MainSection />
+        <Video />
         <Carousel />
         <Profile />
         <LastSection />

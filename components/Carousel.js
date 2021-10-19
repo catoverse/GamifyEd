@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Image from "next/dist/client/image";
 // import "../pages/Carousel.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -59,7 +58,7 @@ export const Carousel = () => {
 };
 
 const StyledCarousel = styled.div`
-  margin: 4em 0;
+  margin: 2em 0 4em;
   padding: 0 1em;
   text-align: center;
 `;

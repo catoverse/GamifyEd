@@ -19,15 +19,15 @@ export const Profile = () => {
         {contacts.info.map((contact) => {
           return (
             <ProfileWrapper key={contact.id}>
-              <img src={contact.img} />
+              <img src={contact.img} alt="profile" />
               <Name>{contact.name}</Name>
               <Badge>{contact.badge}</Badge>
               <Socials>
                 <a href="#">
-                  <img src={contact.twitter.logo} />
+                  <img src={contact.twitter.logo} alt="twitter" />
                 </a>
                 <a href="#">
-                  <img src={contact.linkedin.logo} />
+                  <img src={contact.linkedin.logo} alt="linkedin" />
                 </a>
               </Socials>
             </ProfileWrapper>

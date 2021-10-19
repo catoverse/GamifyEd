@@ -9,7 +9,7 @@ export const LastSection = () => {
         Check your product’s gamification score today right in your Notion
         workspace
       </Heading>
-      <StyledButton>Get GamifyEd Template</StyledButton>
+      <StyledButton href="#">Get GamifyEd Template</StyledButton>
     </StyledLastSection>
   );
 };

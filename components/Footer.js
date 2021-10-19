@@ -19,16 +19,16 @@ export const Footer = () => {
         </Text>
         <Socials>
           <a href="#">
-            <Image src="/Twitter.svg" alt="logo" width={40} height={40} />
+            <Image src="/Twitter.svg" alt="twitter" width={40} height={40} />
           </a>
           <a href="#">
-            <Image src="/Linkedin.svg" alt="logo" width={40} height={40} />
+            <Image src="/Linkedin.svg" alt="linkedin" width={40} height={40} />
           </a>
           <a href="#">
-            <Image src="/Facebook.svg" alt="logo" width={40} height={40} />
+            <Image src="/Facebook.svg" alt="facebook" width={40} height={40} />
           </a>
           <a href="#">
-            <Image src="/Youtube.svg" alt="logo" width={40} height={40} />
+            <Image src="/Youtube.svg" alt="youtube" width={40} height={40} />
           </a>
         </Socials>
       </FooterContainer>
