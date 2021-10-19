@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
           content="Apply gamification to your EdTech products with the help of GamifyEd Notion Template, a comprehensive research based gamification framework"
         />
       </Head>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   );
 }
