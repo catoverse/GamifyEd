@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const StyledMainSection = styled.div`
   text-align: center;
+  margin-top: 2em;
 `;
 
 export const Heading = styled.p`

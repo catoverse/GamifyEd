@@ -9,6 +9,7 @@ export const StyledButton = styled.a`
 
   font-size: 1.125em;
   font-family: var(--para-font);
+  font-weight: 600;
   text-decoration: none;
 
   padding: 8px 18px;

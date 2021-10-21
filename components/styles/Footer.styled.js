@@ -23,8 +23,8 @@ export const Text = styled.p`
 export const Socials = styled.div`
   display: flex;
   flex-direction: row;
+`;
 
-  a {
-    margin: 0 0.5em;
-  }
+export const Social = styled.a`
+  margin: 0 0.5em;
 `;

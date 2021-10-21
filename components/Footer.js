@@ -6,6 +6,7 @@ import {
   FooterContainer,
   Text,
   Socials,
+  Social,
 } from "./styles/Footer.styled";
 
 export const Footer = () => {
@@ -18,18 +19,18 @@ export const Footer = () => {
           NavGurukul Labs
         </Text>
         <Socials>
-          <a href="#">
+          <Social href="#">
             <Image src="/Twitter.svg" alt="twitter" width={40} height={40} />
-          </a>
-          <a href="#">
+          </Social>
+          <Social href="#">
             <Image src="/Linkedin.svg" alt="linkedin" width={40} height={40} />
-          </a>
-          <a href="#">
+          </Social>
+          <Social href="#">
             <Image src="/Facebook.svg" alt="facebook" width={40} height={40} />
-          </a>
-          <a href="#">
+          </Social>
+          <Social href="#">
             <Image src="/Youtube.svg" alt="youtube" width={40} height={40} />
-          </a>
+          </Social>
         </Socials>
       </FooterContainer>
     </FooterWrapper>

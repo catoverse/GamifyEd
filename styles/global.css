@@ -32,3 +32,29 @@
   height: 100%;
   object-fit: cover;
 }
+
+.swiper-button-prev::after {
+  color: var(--pink);
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--pink) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--pink) !important;
+}
+
+.swiper-button-next::after {
+  color: var(--pink);
+}
+
+@media only screen and (max-width: 786px) {
+  .swiper-button-prev::after {
+    display: none;
+  }
+
+  .swiper-button-next::after {
+    display: none;
+  }
+}

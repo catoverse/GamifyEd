@@ -6,21 +6,29 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 // import Swiper core and required modules
-import SwiperCore, { Pagination } from "swiper";
+import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
 
 // install Swiper modules
-SwiperCore.use([Pagination]);
+SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 export const Carousel = () => {
   return (
     <StyledCarousel>
       <Heading>What&apos;s in store?</Heading>
       <Swiper
-        pagination={{
-          dynamicBullets: true,
+        spaceBetween={40}
+        centeredSlides={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
         }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
         className="mySwiper"
       >
         <SwiperSlide>
@@ -58,9 +66,10 @@ export const Carousel = () => {
 };
 
 const StyledCarousel = styled.div`
-  margin: 2em 0 4em;
+  margin: 2em auto 4em;
   padding: 0 1em;
   text-align: center;
+  max-width: 1024px;
 `;
 
 const Heading = styled.div`

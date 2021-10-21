@@ -131,6 +131,10 @@ export const VideoContainer = styled.div`
     overflow-x: hidden;
     z-index: -1;
   }
+
+  @media only screen and (max-width: 786px) {
+    display: none;
+  }
 `;
 
 export const ImageContainer = styled.div`

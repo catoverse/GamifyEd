@@ -7,11 +7,22 @@ import {
   ImageContainer,
   IframeContainer,
   Iframe,
-} from "./styles/Video.styled";
+} from "./styles/DesktopVideo.styled";
+import { motion } from "framer-motion";
 
-export const Video = () => {
+export const DesktopVideo = () => {
+  const variants = {
+    hidden: { opacity: 0, y: "50px" },
+    visible: { opacity: 1, y: "0px" },
+  };
+
   return (
-    <>
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={variants}
+      transition={{ duration: 1 }}
+    >
       <VideoContainer>
         <Circle></Circle>
         <MedCircle></MedCircle>
@@ -42,6 +53,6 @@ export const Video = () => {
           />
         </ImageContainer>
       </VideoContainer>
-    </>
+    </motion.div>
   );
 };

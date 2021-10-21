@@ -9,7 +9,8 @@ import { DarkModeSwitch } from "react-toggle-dark-mode";
 
 // components imports
 import { MainSection } from "../components/MainSection";
-import { Video } from "../components/Video.js";
+import { DesktopVideo } from "../components/DesktopVideo.js";
+import { MobileVideo } from "../components/MobileVideo.js";
 import { Carousel } from "../components/Carousel";
 import { Profile } from "../components/Profile";
 import { LastSection } from "../components/LastSection";
@@ -38,7 +39,12 @@ export default function Home() {
     align-items: center;
     justify-content: center;
 
-    max-width: 1124px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: ${({ theme }) => theme.body};
+
+    /* max-width: 1124px; */
     padding: 0 2em;
     margin: 0 auto;
 
@@ -53,7 +59,7 @@ export default function Home() {
     justify-content: center;
     flex-grow: 1;
 
-    margin: 3em 0;
+    margin: 2em 0;
 
     position: relative;
 
@@ -87,17 +93,6 @@ export default function Home() {
     }
   `;
 
-  const DarkModeButton = styled.button`
-    position: absolute;
-    top: 3.75em;
-    right: 15%;
-
-    @media only screen and (max-width: 486px) {
-      right: 7%;
-      top: 3.5em;
-    }
-  `;
-
   const [isDarkMode, setDarkMode] = useState(true);
 
   const toggleDarkMode = () => {
@@ -106,51 +101,49 @@ export default function Home() {
 
   return (
     <ThemeProvider theme={isDarkMode ? theme.dark : theme.light}>
-      <>
-        <GlobalStyles />
-        <HeaderWrapper>
-          <StyledHeader>
-            <span>
-              {isDarkMode ? (
-                <Logo>
-                  <Image
-                    src="/logo-light.svg"
-                    alt="Vercel Logo"
-                    width={36}
-                    height={57}
-                  />
-                </Logo>
-              ) : (
-                <Logo>
-                  <Image
-                    src="/logo-dark.svg"
-                    alt="Vercel Logo"
-                    width={36}
-                    height={57}
-                  />
-                </Logo>
-              )}
-            </span>
-            <p>
-              Gamify<span>Ed</span>
-            </p>
-          </StyledHeader>
-        </HeaderWrapper>
-        <DarkModeButton
-          as={DarkModeSwitch}
+      <GlobalStyles />
+      <HeaderWrapper>
+        <StyledHeader>
+          <span>
+            {isDarkMode ? (
+              <Logo>
+                <Image
+                  src="/logo-light.svg"
+                  alt="Vercel Logo"
+                  width={36}
+                  height={57}
+                />
+              </Logo>
+            ) : (
+              <Logo>
+                <Image
+                  src="/logo-dark.svg"
+                  alt="Vercel Logo"
+                  width={36}
+                  height={57}
+                />
+              </Logo>
+            )}
+          </span>
+          <p>
+            Gamify<span>Ed</span>
+          </p>
+        </StyledHeader>
+        <DarkModeSwitch
           moonColor={"#ff238b"}
           sunColor={"#F78812"}
           checked={isDarkMode}
           onChange={toggleDarkMode}
           size={30}
         />
-        <MainSection />
-        <Video />
-        <Carousel />
-        <Profile />
-        <LastSection />
-        <Footer />
-      </>
+      </HeaderWrapper>
+      <MainSection />
+      <DesktopVideo />
+      <MobileVideo />
+      <Carousel />
+      <Profile />
+      <LastSection />
+      <Footer />
     </ThemeProvider>
   );
 }
