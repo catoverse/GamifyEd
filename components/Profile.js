@@ -22,10 +22,14 @@ export const Profile = () => {
               <Name>{contact.name}</Name>
               <Badge>{contact.badge}</Badge>
               <Socials>
-                <a href="#">
+                <a href={contact.twitter.link} target="_blank" rel="noreferrer">
                   <img src={contact.twitter.logo} alt="twitter" />
                 </a>
-                <a href="#">
+                <a
+                  href={contact.linkedin.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img src={contact.linkedin.logo} alt="linkedin" />
                 </a>
               </Socials>
