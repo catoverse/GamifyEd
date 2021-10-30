@@ -11,7 +11,6 @@ import {
 } from "./styles/Profile.styled";
 
 export const Profile = () => {
-  console.log(contacts);
   return (
     <StyledProfile>
       <Heading>Say hello?</Heading>
