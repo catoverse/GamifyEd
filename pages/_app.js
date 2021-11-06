@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>GamifyED - Craft playful learning experiences</title>
+        <meta property="og:image" content="/public/thumbnail.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/logo-dark.svg" />
         <meta
           name="description"

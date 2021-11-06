@@ -19,16 +19,19 @@ export const Footer = () => {
           NavGurukul Labs
         </Text>
         <Socials>
-          <Social href="#">
+          <Social href="https://twitter.com/NavGurukul" target="_blank">
             <Image src="/Twitter.svg" alt="twitter" width={40} height={40} />
           </Social>
-          <Social href="#">
+          <Social
+            href="https://www.linkedin.com/company/navgurukul/"
+            target="_blank"
+          >
             <Image src="/Linkedin.svg" alt="linkedin" width={40} height={40} />
           </Social>
-          <Social href="#">
+          <Social href="https://www.facebook.com/navgurukul" target="_blank">
             <Image src="/Facebook.svg" alt="facebook" width={40} height={40} />
           </Social>
-          <Social href="#">
+          <Social href="https://www.youtube.com/c/NavGurukul" target="_blank">
             <Image src="/Youtube.svg" alt="youtube" width={40} height={40} />
           </Social>
         </Socials>
