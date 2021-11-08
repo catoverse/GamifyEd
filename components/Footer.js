@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/dist/client/image";
-
 import {
   FooterWrapper,
   FooterContainer,
