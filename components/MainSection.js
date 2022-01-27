@@ -16,7 +16,7 @@ export const MainSection = () => {
         Apply gamification to your EdTech products with the help of GamifyEd
         Notion Template, a comprehensive research based gamification framework
       </Text>
-      <StyledButton href="https://ashwinchauhan.vercel.app/" target="_blank">
+      <StyledButton href="https://navgurukul.notion.site/The-GamifyEd-Framework-3638cd6b4fd143768db62e5bc29791a2" target="_blank">
         Get GamifyEd Template
       </StyledButton>
     </StyledMainSection>
